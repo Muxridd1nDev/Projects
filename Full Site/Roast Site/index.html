@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style/style.css" />
     <title>Main page</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="header__line">
-            <div class="header__lng">
-                <div class="container">
-                    <div class="header__line--wrapper">
-                        <a href="#">Ru</a>
-                        <a href="#" class="active">En</a>
-                    </div>
-                    <a href="#" class="header__phone">+371000000</a>
-                    </div>
-            </div>
-        </div>
+      <div class="header__line">
         <div class="container">
-
+          <div class="header__line--wrapper">
+            <div class="header__lng">
+              <a href="#">Ru</a>
+              <a href="#" class="active">En</a>
+            </div>
+            <a href="#" class="header__phone">+371000000</a>
+          </div>
         </div>
+      </div>
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__block">
+            <nav class="nav">
+              <a href="#" class="nav__link active">Home</a>
+              <a href="#" class="nav__link">About</a>
+              <a href="#" class="nav__link">Menu</a>
+              <a href="#" class="nav__link">Reservation</a>
+            </nav>
+          </div>
+          <a href="#" class="logo">
+            <img src="./img/logo.png" alt="logo" />
+          </a>
+          <div class="header__block right">
+            <div class="header__actions">
+              <a class="header__link" href="#">
+                <img src="./img/user.svg" alt="profile" />
+              </a>
+              <a class="header__link" href="#">
+                <img src="./img/favorite.svg" alt="favorite" />
+              </a>
+              <a class="header__link" href="#">
+                <img src="./img/cart.svg" alt="cart" />
+                <span class="header__link--event"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-</body>
-
+  </body>
 </html>

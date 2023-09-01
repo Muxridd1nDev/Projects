@@ -1,42 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Jost:wght@400;500;600;700;900&display=swap");
+
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    background-color: #020204;
+  margin: 0;
+  background-color: #020204;
+  font-family: "Jost", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
-    width: 1200px;
-    margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
 }
 
 .header {
-   border-bottom: 1px solid #32323d; 
+  border-bottom: 1px solid #32323d;
 }
 
 .header__line {
-    border-bottom: 1px solid #32323d; 
+  border-bottom: 1px solid #32323d;
 }
 
 .header__line--wrapper {
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .headr__lng {
-
+  display: flex;
 }
 
-.headr__lng a {
-    color: #fff;
+.header__lng a {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.header__lng a.active {
+  color: #c7a17a;
 }
 
 .header__phone {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
 
+.header__wrapper {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__block {
+  width: 40%;
+}
+
+.header__block.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav__link {
+  margin-right: 35px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.nav__link:hover {
+  color: #c7a17a;
+}
+
+.nav__link.active {
+  color: #c7a17a;
+}
+
+.logo {
+}
+
+.logo img {
+  height: 54px;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+}
+
+.header__link {
+  margin-right: 30px;
+  position: relative;
+}
+
+.header__link:last-child {
+  margin-right: 0;
+}
+
+.header__link--event {
+  width: 6px;
+  height: 6px;
+  background-color: #c7a17a;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  right: -3px;
 }
